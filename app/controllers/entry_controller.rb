@@ -18,7 +18,7 @@ class EntryController < ApplicationController
   end
 
   private
-  def entry_params
-    params.require(:entry).permit(:title, :name, :detail)
-  end
+    def entry_params
+      params.require(:entry).permit(:title, :name, :detail)
+    end
 end

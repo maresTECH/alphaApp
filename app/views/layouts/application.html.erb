@@ -9,6 +9,21 @@
   </head>
 
   <body>
-    <%= yield %>
+    <div id="left">
+      <ul>
+        <li><%= link_to "Home", root_path %></li>
+      </ul>
+    </div>
+
+    <div id="header">
+      <p>Food Diary Log</p>
+    </div>
+
+    <div id="Diary">
+      <div class="button">
+        <button class="btn"><%= link_to "New Entry", new_entry_path %></button>
+      </div>
+      <%= yield %>
+    </div>
   </body>
 </html>
