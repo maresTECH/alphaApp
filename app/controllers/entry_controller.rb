@@ -8,9 +8,12 @@ class EntryController < ApplicationController
 
   def create
     @entry = Entry.new(entry_params)
-    @entry.save
 
-    redirect_to @entry
+    if @entry.save
+      redirect_to @entry
+    else
+      render 'new'
+    end
   end
 
   def show
