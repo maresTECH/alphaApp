@@ -8,4 +8,9 @@
 
 <p class="detail">
   <%= @entry.detail %>
+</p
+
+<br><br>
+<p class="delete">
+  <%= link_to 'Delete this entry', entry_path(@entry), method: :delete, data: { confirm: 'do you want to delete this entry?' } %>
 </p>
