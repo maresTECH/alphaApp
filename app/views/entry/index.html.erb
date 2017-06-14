@@ -1,6 +1,6 @@
 <% @entry.each do |entry| %>
   <div class="entry_wrapper">
     <h3 class="title"><%= link_to entry.title, entry %></h3>
-    <p class="date"><%= entry.created_at.strftime("%B, %d") %></p>
+    <p class="date"><%= entry.created_at.strftime("%B %d") %></p>
   </div>
 <% end %>
